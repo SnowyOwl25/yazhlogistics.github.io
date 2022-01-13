@@ -16,17 +16,17 @@
 
     <body >
       <div id="00" class="navbar-fixed">
-        <nav class="white" role="navigation">
+        <nav class="nav-extended white">
           <div class="nav-wrapper container">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger red darken-4"><i class="material-icons">menu</i></a>
-            <a id="logo-container" href="#" class="logo"><img src="img/yazh.png"></a>
+            <a href="#" class="logo"><img src="img/yazh.png"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="margin-right: 50px;"><i class="material-icons red-text text-darken-4">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="#00">Home</a></li>
               <li><a href="#01">Services</a></li>
               <li><a href="#02">Contact</a></li>
             </ul>
 
-            <ul id="mobile-demo" class="sidenav">
+            <ul class="sidenav" id="mobile-demo">
               <li><a href="#00">Home</a></li>
               <li><a href="#01">Services</a></li>
               <li><a href="#02">Contact</a></li>
@@ -103,15 +103,12 @@
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="js/materialize.js"></script>
       <script src="js/init.js"></script>
+      <script src="js/loader.js"></script>
       <script>
-      $('.carousel').carousel(); setInterval(function() {
-      fullWidth: true,
-      $('.carousel').carousel('next');}, 10000);
+      
       </script>
       <script>
-          $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+          
       </script>
     </body>
   </html>
